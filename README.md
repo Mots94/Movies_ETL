@@ -1,7 +1,7 @@
 # Movies_ETL
 Performing ETL process on movie data
 
-![movie_reel](https://github.com/Mots94/Movies_ETL/movie_reel.png)
+![movie_reel](https://github.com/Mots94/Movies_ETL/blob/main/movie_reel.png)
 
 ## Purpose
 The extract, transform, and load (ETL) process is critical to setting up a data pipeline.  During the ETL process, data are often collected from multiple disparate sources, and the completeness of the data is generally unknown.  In order to use these data sources in any meaningful way, the data goes through a stage of manipulation that accounts for null values, incorrect data types, unusual data formats, and many other factors.  Finally, the data can be loaded into a database for storage purposes and future use.  In this exercise, movie data from multiple sources was used to setup a data pipeline from start to finish.
