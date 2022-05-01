@@ -1,2 +1,10 @@
 # Movies_ETL
 Performing ETL process on movie data
+
+![movie_reel](https://github.com/Mots94/Movies_ETL/movie_reel.png)
+
+## Purpose
+The extract, transform, and load (ETL) process is critical to setting up a data pipeline.  During the ETL process, data are often collected from multiple disparate sources, and the completeness of the data is generally unknown.  In order to use these data sources in any meaningful way, the data goes through a stage of manipulation that accounts for null values, incorrect data types, unusual data formats, and many other factors.  Finally, the data can be loaded into a database for storage purposes and future use.  In this exercise, movie data from multiple sources was used to setup a data pipeline from start to finish.
+
+## Overview
+Movie data used for this exercise came from Wikipedia as well as Kaggle and MovieLens.  The Wikipedia data was in the format of a JSON file, and the Kaggle and MovieLens data were CSV files.  A single function was created to perform the whole ETL process.  This function was designed to read each file into python, filter out certain columns of unncessary data, parse strings to create numeric data types, fill in missing data, merge dataframes, and ultimately load the final products into a database.  By doing this, even if these data sets were updated with new information, the function could simply be run on the updated raw data in order to update the cleaned database.  One aspect of this process that must be accounted for, is any new data types or formatting in the raw data that was not originally accounted for when the function was built.  This may affect how the function runs and the final product as well.  Since this process is dyanmic, it is worth the time to review data sources and the data pipeline setup every so often to ensure the final product is in a usable format.
